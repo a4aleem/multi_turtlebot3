@@ -42,7 +42,7 @@ catkin_make
 source ~/catkin_ws/devel/setup.bash
 ```
 
-2. Open another terminal -- Launch navigation stacks
+3. Open another terminal -- Launch navigation stacks
 * Source setup file.
 ```
 source /opt/ros/melodic/setup.bash
