@@ -31,7 +31,18 @@ There, there, you'll see the Gazebo window showing house model and three turtleb
 ![](resources/gazebo.png)
 ***To save the usage of your CPU usage, killall gzclient can close the GUI, which consumes lots of resource.***
 
-2. Second terminal -- Launch navigation stacks
+2. Clone and Build Multibot Layer Plugin
+* Source setup file.
+```
+cd ~/catkin_ws/src
+git clone https://github.com/a4aleem/multibot_layer
+cd ~/catkin_ws
+rosdep install --from-paths src --ignore-src -r -y
+catkin_make
+source ~/catkin_ws/devel/setup.bash
+```
+
+2. Open another terminal -- Launch navigation stacks
 * Source setup file.
 ```
 source /opt/ros/melodic/setup.bash
